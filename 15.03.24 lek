@@ -1,0 +1,32 @@
+
+class Semion_jestes_najlepszy:
+    @staticmethod       
+    def gg():
+        with open("xxx.txt", "w") as text_file:
+            text = ""
+            y = 1
+            text_file.write(text)
+            for i in range(1,11):
+                for x in range(1,11):
+
+                    if i == x:
+                        text_file.write("1\t")
+                    else:
+                        text_file.write("0\t")
+                text_file.write("\n")
+
+    @staticmethod
+    def G():
+        with open("xxx.txt", "w") as text_file:
+            text = ""
+            y = 1
+            text_file.write(text)
+            for i in range(1,11):
+                for x in range(1,11):
+                    text_file.write(f"{x*i}\t")
+                text_file.write("\n")
+
+
+
+Semion_jestes_najlepszy.gg()
+Semion_jestes_najlepszy.G()
